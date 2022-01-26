@@ -1,0 +1,8 @@
+<h2>Update a task: {{toDo.Id}}</h2>
+<p>Team Member:</p>
+<input type="text" name="nameofteammember" id="nameofteammember" value="{{toDo.nameofteammember}}"/>
+<p>Short Description:</p>
+<input type="text" name="shortDescription" id="shortDescription" value="{{toDo.shortDescription}}"/>
+<p>Due Date:</p>
+<input type="date" id="dateTime" value="{{toDo.dateTime}}"/>
+<button (click)="UpdateToDo(toDo.id)">Update</button>

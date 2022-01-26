@@ -1,0 +1,13 @@
+<div class="ToDoList">
+    <div *ngFor="let item of toDos">
+        <div id="displayDiv{{item.id}};">
+            <p id="idDesc{{item.id}}"><span class="indexSpan">Task: {{item.id}}</span>&nbsp;&nbsp;{{item.shortDescription}}</p>
+            <p id="assignedTo{{item.id}}">{{item.tm}}</p>
+            <p id="completed{{item.id}}">Completed: <input type="checkbox" name="completed" value="{{item.completed}}" readonly="true"/></p>
+        </div>
+        <button (click)="DeleteToDo(item.id)">Delete Item</button>
+    </div>
+</div>
+<div class="NewToDo">
+    <app-create-todo></app-create-todo>
+</div>

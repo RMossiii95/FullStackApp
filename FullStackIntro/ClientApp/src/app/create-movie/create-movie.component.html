@@ -1,0 +1,23 @@
+<h2>Add a new Movie to the database</h2>
+
+<p>Title</p>
+<input type="text" id="title"/>
+
+<br>
+
+<p>Genre</p>
+
+<select name="genre" id="Genre">
+    <option value="comedy">Comedy</option>
+    <option value="drama">Drama</option>
+    <option value="horror">Horror</option>
+    <option value="animated">Animated</option>
+</select>
+<br>
+<p>Year</p>
+<input type="number" min="1880" max="2030" id="Year"/>
+<br>
+<p>Run Time (in minutes)</p>
+<input type="number" min="0" id="RunTime"/>
+
+<button (click)="CreateMovie()">Add Movie</button>
